@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="galeria.js"></script>
+
+
+	<meta charset="UTF-8">
+	<title>Galeria</title>
+<link href="C:\Users\Irati\Practica2/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="all" rel="stylesheet" />
+	<link href="galeria.css" media="all" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+</head>
+
+
+<body>
+
+
+<script>
+   // alert("Hello\nHow are you?");
+
+</script>
+
+	<div class=' contenedor col-md-12 text-center'>
+	<h1 class="Titulo">GALERIA DE PRODUCTOS</h1>
+	<p> </p>
+	<div class='principal'>
+		<div id='imgGrande' class='imageGrande col-md-4 text-center'>
+			<button type='button' id ='0' >
+				<img id="1" data-num='1' class='img-responsive'  src='cuadro_1_large.jpg'
+				data-descripcion='Triptico de tres cuadros formando un paisaje. Precio: 50 euros'
+				data-precio1='50' value=50> </img>
+			</button>
+		
+		</div>
+		<div id='imgGrande' class='imageGrande col-md-4  text-center'>
+			<button type='button' id ='1' >
+				<img id="2"  data-num='2' class='img-responsive '  src='cuadro_2_large.jpg'
+				data-descripcion='Cuadro de elefantes en africa en tonos púrpuras. Precio: 75 euros'
+				data-precio2='75' value=75> </img>
+			</button>
+		
+		</div>
+		<div id='imgGrande' class='imageGrande col-md-4 text-center'>
+			<button type='button' id ='2'>
+				<img id="3" data-num='3' class='img-responsive'  src='cuadro_3_large.jpg'
+				data-descripcion='Triptico de tres cuadros con paisaje playero. Precio: 60 euros'
+				data-precio3='60' value=60> </img>
+			</button>
+		
+		</div>
+	</div>
+		
+		<div class='row'> <pre></pre>
+		</div>
+		
+		<div class='container col-md-6 col-md-offset-4'>
+			<ul class='menu'>
+				<li id='cuadro' class='active'>Cuadro</li>
+				<li id='descripcion'>Descripción</li>
+				<li id='comprar'>Comprar</li>
+			</ul>
+			<span class='clear'></span>
+			
+			
+			<div class='content cuadro col-md-10 col-md-offset-2'>
+				<h3>Otras imagenes</h3>
+				
+				<div id ='largeImage' class ='imagenCentral'>	
+					<img class=' img-responsive ' data-a='m' id='imagenPrincipal' src='cuadro_1_large.jpg'></img>
+				</div>
+				
+				<div id = 'thumbs' class ='imagenPequeña col-md-9 col-md-offset-3'>	
+					
+
+						<img class ='pulsaImagen'  data-posicion='0' id='0' class='img-responsive ' src='cuadro_11_thumb.png' alt=''></img>
+				
+						<img class ='pulsaImagen' data-posicion='1' id='1' class='img-responsive ' src='cuadro_12_thumb.png' alt=''></img>
+				
+						<img class ='pulsaImagen' data-posicion='2' id='2' class='img-responsive ' src='cuadro_13_thumb.png' alt=''></img>
+						
+				</div>
+				
+<!--  -->
+			</div>
+			
+			<div class='content descripcion' id='texto'>
+				<h3>Descripción</h3>
+				<p id='escribir'>text</p>
+				
+			</div>
+			
+			<div class='content comprar'>
+				<div class='producto' data-precio ='50' value=50>
+					<h3>Precio</h3>
+					<p> Unidades: </p>
+						<input type='number' class='cantidad' value=0 />
+					</p>
+				</div>
+				<p>Precio total: <span id = 'total'>0</span> &euro;</p>
+				
+				
+			</div>
+		</div>
+		
+	
+		
+		<div class='resumen col-md-8 col-md-offset-4'>
+		<pre></pre>
+			<table id='tabla'>
+			  <tr>
+			    <th>Producto</th>
+				<th>Cantidad</th>
+				<th>Coste</th> 
+			  </tr>
+			  <tr>
+				<td>Cuadro Bosque</td>
+				<div class='cuadro1precio' value=0>
+				<td><span id='cantidad1'>0</span></td>
+				<td><span id='precioProducto1'>0</span></td>
+				</div>
+			  </tr>
+			  <tr>
+				<td>Cuadro Elefantes</td> 
+				<div class='cuadro2precio' value=0>
+				<td><span id='cantidad2'>0</span></td>
+				<td><span id='precioProducto2'>0</span></td>
+				</div>
+			  </tr>
+			  <tr>
+				<td>Cuadro Playa</td>
+				<div class='cuadro3precio' value=0>
+				<td><span id='cantidad3'>0</span></td>
+				<td><span id='precioProducto3'>0</span></td>
+				</div>
+			  </tr>
+			   <tr>
+				<th>TOTAL:<span id='precioTotal'>0</span> &euro;</p></th>
+			  </tr>
+			 </table>
+		</div>
+	
+	
+
+	
+	
+	</div>
+
+
+</body>
+</html>
